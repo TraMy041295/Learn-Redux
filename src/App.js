@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import Count from './components/Count/Count';
+import ShowCount from './components/Count/ShowCount';
+import Todolist from './components/Todolist'
+import BookList from './components/BookList';
+import InputForm from './components/InputForm/InputForm';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Count number={1}/>
+    <Count number={2}/>
+    <ShowCount />
+    <Todolist /> */}
+    <InputForm/>
+    <BookList/>
+    </>
   );
 }
 
